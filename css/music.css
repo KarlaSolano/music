@@ -1,0 +1,150 @@
+:root{
+    --main-color : #040404;
+    --secondary-color: #282828;
+    --section-color: #121212;
+    --font-color: #B3B3B3;
+    --font: 'Raleway', sans-serif;
+}
+
+
+body{
+    margin: 0px;
+    color: var(--font-color);
+    font-family: var(--font) ;
+}
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr)  80px;
+}
+
+.wrapper__content{
+    display: grid;
+    grid-template: minmax(0, 1fr) / 200px minmax(0, 1fr) 200px;
+}
+
+.content-nav{
+    display: grid;
+    grid-template: 150px minmax(0, 1fr) 50px / minmax(0, 1fr);
+}
+
+.content-social{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 50px minmax(0 , 1fr);
+}
+
+.content-result{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 100px minmax(0 , 1fr);
+}
+
+.header-menu, .header-title{
+    height: 50%;
+}
+
+
+.header-menu__search, .header-menu__profile{
+    height: 100%;
+    width: 150px;
+    background: seagreen;
+}
+
+.body-profile{
+    display: grid;
+    grid-template: minmax(0, 1fr) / 60px minmax(0, 1fr);
+    height: 100px;
+}
+
+
+.photo-wrapper{
+    height: 40px;
+    width: 40px;
+}
+
+.img-round{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.sources-playlist .sources-playlist__item, .sources-library .sources-library__item, .content-nav__home .home-items, .content-nav__new .new{
+    margin: 0.5em 1em;
+}
+
+
+.overflow-y::-webkit-scrollbar-track{
+    background-color: var(--main-color);
+ }    
+ 
+ .overflow-y::-webkit-scrollbar{
+     width: 8px;
+     background-color:  var(--secondary-color);
+ }
+ 
+ .overflow-y::-webkit-scrollbar-thumb{
+    background-color:var(--main-color);
+ }
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.overflow-y{
+    overflow-y: auto;
+}
+
+.mg-container{
+    margin: 0.5em 0.5em;
+}
+
+.mr-05m{
+    margin-right: 0.5em;
+}
+
+.ml-05m{
+    margin-left: 0.5em;
+}
+
+.main-color{
+    background: var(--main-color);
+}
+
+.secondary-color{
+    background: var(--secondary-color);
+}
+
+.section-color{
+    background: var(--section-color);
+}
+
+.flex-jc-center{
+    justify-content: center;
+}
+
+.flex-jc-sb{
+    justify-content: space-between;
+}
+
+.flex-ai-center{
+    align-items: center;
+}
+
+.font-size-12{
+    font-size: 12px;
+}
+
+.font-bold{
+    font-weight: bold;
+}
