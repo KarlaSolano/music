@@ -3,6 +3,7 @@
     --secondary-color: #282828;
     --section-color: #121212;
     --font-color: #B3B3B3;
+    --action-color:  rgba(0, 0, 0, 0.3);
     --font: 'Raleway', sans-serif;
 }
 
@@ -43,14 +44,69 @@ body{
 }
 
 .header-menu, .header-title{
-    height: 50%;
+    height: 80%;
 }
 
 
 .header-menu__search, .header-menu__profile{
     height: 100%;
     width: 150px;
-    background: seagreen;
+}
+
+.content-result__resource{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 60px 40px minmax(0 , 1fr);
+}
+
+.bar-round{
+    border-radius: 10px;
+}
+.result__resource-album{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: 250px;
+    grid-gap: 20px 20px;
+}
+
+.resource-album__img{
+    position: relative;
+}
+
+.img-album{
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+
+.resource-album__img:hover .resource__options{
+    display: flex;
+    cursor: pointer;
+}
+
+.resource__options{
+    position: absolute;
+    top: 0;
+    height: 80%;
+    width: 100%;
+}
+
+.o-options{
+    opacity: 1;
+    display: none;
+}
+
+.c-icon{
+    color: white;
+}
+
+.t-icon{
+    font-size: 40px;
+}
+
+.menu__profile-img{
+    height: 30px;
+    width: 30px;
 }
 
 .body-profile{
@@ -71,7 +127,25 @@ body{
     width: 100%;
 }
 
-.sources-playlist .sources-playlist__item, .sources-library .sources-library__item, .content-nav__home .home-items, .content-nav__new .new{
+.wrapper__actions{
+    display: grid;
+    grid-template-columns: 200px  minmax(0, 1fr) 200px;
+    grid-template-rows: minmax(0 , 1fr);
+}
+
+.time{
+    border: 2px solid rgba(128, 128, 128, 0.295);
+    width: 400px;
+    height: 1px;
+}
+
+.lh{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sources-playlist .sources-playlist__item, .sources-library .sources-library__item, .content-nav__home .home-items, .content-nav__new .new{ 
     margin: 0.5em 1em;
 }
 
@@ -117,6 +191,14 @@ body{
     margin-left: 0.5em;
 }
 
+.ml-1m{
+    margin-left: 1em;
+}
+
+.mt-05m{
+    margin-top: 0.5em;
+}
+
 .main-color{
     background: var(--main-color);
 }
@@ -129,6 +211,10 @@ body{
     background: var(--section-color);
 }
 
+.action-color{
+    background-color: var(--action-color);
+}
+
 .flex-jc-center{
     justify-content: center;
 }
@@ -139,6 +225,10 @@ body{
 
 .flex-ai-center{
     align-items: center;
+}
+
+.flex-jc-se{
+    justify-content: space-evenly;
 }
 
 .font-size-12{
