@@ -145,6 +145,12 @@ body{
     margin-right: 20px;
 }
 
+.lv{
+    border: 2px solid rgba(128, 128, 128, 0.295);
+    width: 40px;
+    height: 1px;
+}
+
 .sources-playlist .sources-playlist__item, .sources-library .sources-library__item, .content-nav__home .home-items, .content-nav__new .new{ 
     margin: 0.5em 1em;
 }
