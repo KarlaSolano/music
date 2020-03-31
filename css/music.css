@@ -155,6 +155,17 @@ body{
     height: 1px;
 }
 
+.modal__body{
+    display: grid;
+    grid-template-columns: 200px minmax(0 , 1fr);
+    grid-template-rows: 200px;
+}
+
+.modal_img-upload{
+    width: 150px;
+    height: 150px;
+}
+
 .sources-playlist .sources-playlist__item, .sources-library .sources-library__item, .content-nav__home .home-items, .content-nav__new .new{ 
     margin: 0.5em 1em;
 }
