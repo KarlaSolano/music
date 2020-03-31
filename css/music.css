@@ -129,7 +129,7 @@ body{
 
 .wrapper__actions{
     display: grid;
-    grid-template-columns: 200px  minmax(0, 1fr) 200px;
+    grid-template-columns: 200px  minmax(0, 1fr) 40px 200px;
     grid-template-rows: minmax(0 , 1fr);
 }
 
